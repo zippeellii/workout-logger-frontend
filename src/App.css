@@ -5,27 +5,27 @@ pink: #F7027D;
 blue: #39BEE5;
 */
 
-.app {
+.App {
   text-align: center;
 }
 
-.app-logo {
+.App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
 
-.app-header {
+.App-header {
   background-color: #F7027D;
   height: 150px;
   padding: 20px;
   color: white;
 }
 
-.app-intro {
+.App-intro {
   font-size: large;
 }
 
-@keyframes app-logo-spin {
+@keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
