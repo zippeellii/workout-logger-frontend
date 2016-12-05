@@ -6,17 +6,19 @@ class Header extends Component {
 		return (
 			<div>
 				<table className="header">
-					<tr>
-						<td className="account-icon">
-							<Button href="/log-in">
-								<span className="glyphicon glyphicon-user"></span>
-								<span>Log in</span>
-							</Button>
-						</td>
-						<td>
-							<p className="UWL-logo-small">Ultimate Workout Logger</p>
-						</td>
-					</tr>
+					<tbody>
+						<tr>
+							<td className="account-icon">
+								<Button href="/log-in">
+									<span className="glyphicon glyphicon-user"></span>
+									<span>Log in</span>
+								</Button>
+							</td>
+							<td>
+								<p className="UWL-logo-small">Ultimate Workout Logger</p>
+							</td>
+						</tr>
+					</tbody>
 				</table>
 			</div>
 		)
