@@ -5,16 +5,22 @@ class Header extends Component {
 	render() {
 		return (
 			<div>
-				<table className="header">
-					<tr>
-						<td className="account-icon">
-							<Button href="/log-in">
-								<span className="glyphicon glyphicon-user"></span>
+				<table>
+					<tr className="nav">
+						<td>
+							<a>
 								<span>Log in</span>
-							</Button>
+							</a>
 						</td>
 						<td>
-							<p className="UWL-logo-small">Ultimate Workout Logger</p>
+							<a>
+								<span>Log in</span>
+							</a>
+						</td>
+						<td>
+							<a>
+								<span>Log in</span>
+							</a>
 						</td>
 					</tr>
 				</table>
