@@ -10,12 +10,12 @@ class SignupForm extends Component {
 
 	updateUsername(event){
 		let email = event.target.value;
-		this.setState({email: email});
+		this.setState({email});
 	}
 
 	updatePassword(event){
 		let password = event.target.value;
-		this.setState({password: password});
+		this.setState({password});
 	}
 
 	updateConfirm(event) {
@@ -24,26 +24,14 @@ class SignupForm extends Component {
 		if (pass !== confirm) {
 			console.log("Passwords do not match.");
 		}
-		this.setState({confirm: confirm})
+		this.setState({confirm})
 	}
 
-	// handleSubmit(event) {
-	// 	event.preventDefault();
-
-	// 	console.log("props" this.props);
-	// 	console.log("state", this.state);
-
-	// 	let fn = this.props.submitCallback;
-	// 	let email = this.state.email;
-	// 	let password = this.state.password;
-	// 	let confirm = this.state.confirm;
-	// 	fn(this.state);
-	// }
 	render() {
 		return (
 			<div>
 				<Form onSubmit={ (e) => { e.preventDefault(); this.props.submitCallback(this.state); }}>
-					<FormGroup controlId="username">
+					<FormGroup controlId="email">
 					  	<ControlLabel>Email</ControlLabel>
 					  	<FormControl type="email" onChange={this.updateUsername.bind(this)} />
 					</FormGroup>

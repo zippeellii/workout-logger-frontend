@@ -8,12 +8,12 @@ require('bootstrap/dist/css/bootstrap.min.css')
 require('./App.css')
 
 
-import { Router, Route, browserHistory, IndexRoute } from 'react-router'
+import { Router, Route, browserHistory, IndexRoute } from 'react-router';
 
 ReactDOM.render((
   <Router history={browserHistory}>
     <Route path="/" component={App}>
-    	<IndexRoute component={Home}/>
+    	<IndexRoute component={Home} />
     	<Route path="/sign-up" component={Signup} />
     </Route>
   </Router>
