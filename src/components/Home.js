@@ -7,7 +7,7 @@ class Home extends Component {
 			<Row className="show-grid">
 		      <Col xs={12}>
 		      	<p className="UWL-logo">Ultimate <br />Workout <br />Logger</p>
-		      	<Button bsStyle="primary" bsSize="large" href="/sign-in">
+		      	<Button bsStyle="primary" bsSize="large" href="/sign-up">
 		      		Sign up
 		      	</Button>
 		      </Col>
