@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Header extends Component {
+class Login extends Component {
 	render() {
 		return (
 			<div>This is the Login page.</div>
@@ -8,4 +8,4 @@ class Header extends Component {
 	}
 }
 
-export default Header;
+export default Login;

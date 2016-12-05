@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Row, Col, Button } from 'react-bootstrap';
 
-class Header extends Component {
+class Home extends Component {
 	render() {
 		return (
 			<Row className="show-grid">
@@ -14,4 +14,4 @@ class Header extends Component {
 	}
 }
 
-export default Header;
+export default Home;
