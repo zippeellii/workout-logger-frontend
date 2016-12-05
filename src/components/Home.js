@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
+import { Row, Col, Button } from 'react-bootstrap';
 
 class Header extends Component {
 	render() {
 		return (
-			<div>This is the Home page.</div>
+			<Row className="show-grid">
+		      <Col xs={12}>
+		      	<p className="UWL-logo">Ultimate <br />Workout <br />Logger</p>
+		      	<Button bsStyle="primary" bsSize="large">Sign up</Button>
+		      </Col>
+		    </Row>
 		)
 	}
 }

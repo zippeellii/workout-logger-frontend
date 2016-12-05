@@ -3,29 +3,60 @@
 /* 
 pink: #F7027D;
 blue: #39BEE5;
+dark gray: #636363;
 */
 
-.App {
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+}
+
+.UWL-logo {
   text-align: center;
+  font-family: 'Faster One', cursive;
+  font-size: 42px;
+  color: #F7027D;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.UWL-logo-small {
+  padding-left: 10px;
+  margin-bottom: 0px;
+  font-family: 'Faster One', cursive;
+  font-size: 16px;
+  color: #39BEE5;
 }
 
-.App-header {
+.btn {
+  border: none;
+  border-radius: 3px;
+}
+
+.btn-primary {
   background-color: #F7027D;
-  height: 150px;
-  padding: 20px;
-  color: white;
 }
 
-.App-intro {
-  font-size: large;
+.btn-primary:active, .btn-primary:hover {
+
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.btn-large {
+  padding: 10px 65px;
+}
+
+.header {
+  height: 32px;
+  border: 1px solid #000;
+  width: 100%;
+}
+
+.account-icon {
+  border-right: 1px solid #000;
+}
+
+.account-icon > a > span.glyphicon {
+  font-size: 12px;
+  margin-right: 10px;
+  color: #636363;
 }
