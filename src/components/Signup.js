@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Col} from 'react-bootstrap';
 import SignupForm from './Forms/SignupForm';
+import request from 'request';
 
 class Signup extends Component {
 	submit(userInfo) {
@@ -9,7 +10,18 @@ class Signup extends Component {
 		let email = userInfo.email;
 		let password = userInfo.password;
 		let confirm = userInfo.confirm;
-		console.log(`Submitting for email: ${email}`);
+		request.post({
+			url: "http://localhost:8080/users/create", 
+			json: {
+				email: email, password: password, confirm_password: confirm
+			},
+		}, (err, res, body) => {
+			if(!err && res.statusCode === 200) {
+				console.log("Success!");
+			} else {
+				console.log(err, res.statusCode, body);
+			}
+		});
 	}
 	render() {
 		return (
