@@ -1,24 +1,31 @@
 import React, { Component } from 'react';
-import { DropdownButton, MenuItem, Button } from 'react-bootstrap';
 
-var activeClass = function(){
-	console.log('hello');
-}
 
-class Header extends Component {
+class Nav extends Component {
+	activeClass(elem) {
+
+	    // let a = document.getElementsByTagName('a');
+
+	    // for (let i = 0; i < a.length; i++) {
+	    //     a[i].classList.remove('active');
+	    // }
+
+	    // elem.classList.add('active');
+	}
+
 	render() {
 		return (
 			<table className="nav">
 				<tbody>
 					<tr className="nav">
-						<td className="active" id="log-workout">
-							<a href="/log-workout" onClick={activeClass}>Log Workout</a>
+						<td className="active" id="log-workout" onClick={this.activeClass(this)}>
+							<a href="/log-workout">Log Workout</a>
 						</td>
-						<td id="view-program">
-							<a href="/view-program" onClick={activeClass}>View Program</a>
+						<td id="view-program" onClick={this.activeClass(this)}>
+							<a href="/view-program">View Program</a>
 						</td>
-						<td id="history">
-							<a href="/history" onClick={activeClass}>History</a>
+						<td id="history" onClick={this.activeClass(this)}>
+							<a href="/history">History</a>
 						</td>
 					</tr>
 				</tbody>
@@ -27,4 +34,4 @@ class Header extends Component {
 	}
 }
 
-export default Header;
+export default Nav;

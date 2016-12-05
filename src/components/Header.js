@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { DropdownButton, MenuItem, Button } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 
 class Header extends Component {
 	render() {

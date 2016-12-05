@@ -11,6 +11,16 @@ body {
   padding: 0;
   font-family: 'Karla', sans-serif;
   font-size: 16px;
+  font-weight: normal;
+  color: #666;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+  letter-spacing: 1px
 }
 
 .UWL-logo {
@@ -38,9 +48,18 @@ body {
   background-color: #F7027D;
 }
 
-.btn-primary:active, .btn-primary:hover {
-
+.btn-primary:active, .btn-primary:hover, .btn-primary:focus {
+  background-color: #C10162;
 }
+
+.btn-info {
+  background-color: #000;
+}
+
+.btn-info:active, .btn-info:hover, .btn-info:focus {
+  background-color: #000;
+}
+
 
 .btn-large {
   padding: 10px 65px;
@@ -78,7 +97,8 @@ table.nav {
 
 .nav {
   width: 100%;
-  border: 1px solid #000;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
   height: 32px;
 }
 
@@ -94,4 +114,55 @@ table.nav {
 
 .nav td.active a {
   color: #FFF;
+}
+
+.nav td a.active {
+  color: #006ff1;
+}
+
+.dropdown button {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.program-day {
+  width: 100%;
+  border: 1px solid #000;
+  height: 32px;
+  text-align: left;
+  margin: 20px 0px;
+}
+
+/*.program-day td, .program-day tr {
+  border-collapse: collapse;
+}*/
+
+.program-day thead {
+  border-bottom: 3px solid #000;
+}
+
+.program-day h3 {
+  margin: 7px;
+}
+
+.program-day p {
+  margin: 7px;
+}
+
+.centered-content {
+  text-align: center;
+}
+
+.anchored-bottom {
+  position:fixed;
+  bottom:70px;
+}
+
+.fake-btn-block {
+  width: 300px;
+  margin: 20px 0px 0px;
+}
+
+.padding-inside {
+  padding: 20px;
 }

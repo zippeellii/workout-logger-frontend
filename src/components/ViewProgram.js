@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import Program from './Program';
 
 class ViewProgram extends Component {
 	render() {
 		return (
-			<div>This is where you view your program!</div>
+			<div>
+				<Program />
+			</div>
 		)
 	}
 }
